@@ -2,6 +2,11 @@
 
 ## [Unreleased](https://github.com/schemathesis/schemathesis/compare/v4.33.1...HEAD) - TBD
 
+### :wrench: Changed
+
+- One `setup` phase replaces `probing`, `schema_analysis` and `auth_bootstrap`; its `PhaseFinished` payload is `SetupPayload`.
+- `SchemaAnalysisWarnings` event renamed to `SetupWarnings`.
+
 ### :bug: Fixed
 
 - Schema-level `examples` reached through `$ref` chains ignored in the examples phase.

@@ -471,8 +471,8 @@ def clean_unit_tests(lines):
         if "API capabilities" in line:
             capabilities_idx = idx
             break
-        if "API probing" in line:
-            # No capability block follows; probing failed/skipped.
+        if "Setup interrupted" in line:
+            # No capability block follows; setup was interrupted.
             probing_idx = idx + 2
             break
     else:
