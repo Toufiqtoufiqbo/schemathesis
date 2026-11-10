@@ -10,6 +10,7 @@
 - Send `content` parameters with `+json` or `charset` JSON media types as JSON text.
 - Links treating `PUT` updaters as creators when the collection's `POST` is a path item `$ref`.
 - `SCHEMATHESIS_HOOKS` ignored or loaded too late for its CLI options when the config file sets `hooks`.
+- Class-based checks' `after_run` never called for `as_state_machine().TestCase` under pytest.
 - Links passing ids between unrelated resources whose `$ref` ends in `items` or `schema`.
 - False `Content deserialization error` for WSGI app responses declaring a non-UTF-8 `charset`.
 - Coverage phase generating invalid or missing positive cases behind components that only reference another.
