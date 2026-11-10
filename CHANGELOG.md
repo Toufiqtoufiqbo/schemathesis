@@ -9,6 +9,7 @@
 - False positive `negative_data_rejection` for form body values another `anyOf` branch accepts as text.
 - Send `content` parameters with `+json` or `charset` JSON media types as JSON text.
 - Links treating `PUT` updaters as creators when the collection's `POST` is a path item `$ref`.
+- `after_validate` hook never called by `st run` and `st fuzz`.
 - `SCHEMATHESIS_HOOKS` ignored or loaded too late for its CLI options when the config file sets `hooks`.
 - Links passing ids between unrelated resources whose `$ref` ends in `items` or `schema`.
 - False `Content deserialization error` for WSGI app responses declaring a non-UTF-8 `charset`.
