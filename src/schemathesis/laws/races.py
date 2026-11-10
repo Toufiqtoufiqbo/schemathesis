@@ -3,9 +3,10 @@
 from __future__ import annotations
 
 import threading
+from collections.abc import Callable
 from concurrent.futures import ThreadPoolExecutor
 from dataclasses import dataclass, field
-from typing import Any, Callable
+from typing import Any
 
 from schemathesis.laws.core import SINGLE_USE_HINTS, Violation
 
