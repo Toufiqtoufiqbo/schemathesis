@@ -8,7 +8,7 @@ package adds the *write* side and the data-level view:
 * :mod:`schemathesis.laws.proof` - proof bundles that can be replayed
 * :mod:`schemathesis.laws.checks` - the Schemathesis check that enforces the laws
 
-Example
+Example:
 -------
 
 .. code-block:: bash
@@ -16,6 +16,7 @@ Example
     export MIZAN_POLICY=mizan-policy.json
     export MIZAN_LEDGER=ledger.jsonl
     schemathesis run http://127.0.0.1:8000/openapi.json --checks MizanLawCheck
+
 """
 
 from __future__ import annotations
