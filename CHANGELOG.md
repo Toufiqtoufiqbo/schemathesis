@@ -24,6 +24,7 @@
 - Links filling path parameters from `writeOnly` response fields behind `$ref` or marked `x-writeOnly`.
 - Missing links for responses naming the resource id `pk`, as in Django REST Framework.
 - Links passing path parameters like `{id}` between unrelated resources, e.g. a customer id into `/orders/{id}`.
+- Links reading values from fields no `oneOf` branch declares, e.g. `checkID` for `/checks/{checkID}`.
 - Links copying a fetched value into an update body field whose `$ref` enum rejects it.
 - False positive `negative_data_rejection` for `deepObject` members sent as valid strings. [#5902](https://github.com/schemathesis/schemathesis/issues/5902)
 - Links reading values from map properties named after the path, e.g. `tags` in `PATCH /orders/{id}/tags`.
